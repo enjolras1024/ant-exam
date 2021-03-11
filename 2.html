@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>题目 2</title>
+</head>
+<body>
+  <script src="js/axios.js"></script>
+  <script src="axios-retry/dist/axios-retry.js"></script>
+  <p>请使用axios_retry发送请求，config同axios，新增配置项retry，例如：</p>
+  <pre>
+    axios_retry({
+      url: 'http://localhost:3000/data', 
+      method: 'get',
+      retry: {
+        count: 2, // 重试次数，默认0
+        sleep: 2000, // 重试前休眠时间(ms)，默认0
+        maxAge: 10000 // 缓存时长(ms)，默认0。连续两次相同请求间隔不超过此值，则读取缓存，否则重新请求。
+      }
+    })
+    .then(function(res) {
+      console.log(res)
+    })
+    .catch(function(err) {
+      console.error(err)
+    })
+  </pre>
+</body>
+</html>

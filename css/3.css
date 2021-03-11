@@ -1,0 +1,156 @@
+body {
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+}
+
+.ant-icon {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  border-radius: 9px;
+}
+
+.ant-icon-fail {
+  background-color: #ff0000;
+}
+
+.ant-icon-success {
+  background-color: #00ff00;
+}
+
+.ant-pipeline {
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.ant-stage {
+  vertical-align: top;
+  display: inline-block;
+  margin: 0px 40px;
+  width: 190px;
+}
+
+.ant-stage h3 {
+  margin: 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ant-job {
+  display: inline-block;
+  position: relative;
+  width: 170px;
+  height: 24px;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 22px;
+  margin-bottom: 15px;
+}
+
+.ant-job > .ant-icon {
+  position: relative;
+  left: 4px;
+  top: 2px;
+}
+
+.ant-job > .ant-name {
+  display: inline-block;
+  width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 10px;
+  position: relative;
+}
+
+.ant-job > .ant-time {
+  display: inline-block;
+  width: 60px;
+  position: relative;
+  top: -2px;
+}
+
+.ant-line-l1, 
+.ant-line-l2,
+.ant-line-r1, 
+.ant-line-r2 {
+  position: absolute;
+  height: 30px;
+  width: 15px;
+}
+
+.ant-line-l1 {
+  top: -39px;
+  left: -33px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-top-right-radius: 15px;
+}
+
+.ant-line-l2 {
+  top: -8px;
+  left: -18px;
+  border-left: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  border-bottom-left-radius: 15px;
+}
+
+.ant-line-r1 {
+  top: -39px;
+  right: -33px;
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  border-top-left-radius: 15px;
+}
+
+.ant-line-r2 {
+  top: -8px;
+  right: -18px;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  border-bottom-right-radius: 15px;
+}
+
+.ant-job:first-child .ant-line-l1,
+.ant-job:first-child .ant-line-r1 {
+  border-top: 2px solid #ccc;
+  border-radius: 0;
+  height: 0;
+  width: 50px;
+}
+
+.ant-job:first-child .ant-line-l1 {
+  left: -52px;
+  top: 20px;
+}
+
+.ant-job:first-child .ant-line-r1 {
+  right: -52px;
+  top: 20px;
+}
+
+.ant-job:first-child .ant-line-l2,
+.ant-job:first-child .ant-line-r2 {
+  display: none;
+}
+
+.ant-job:nth-child(n+3) .ant-line-l1,
+.ant-job:nth-child(n+3) .ant-line-r1 {
+  display: none;
+}
+
+.ant-job:nth-child(n+3) .ant-line-l2,
+.ant-job:nth-child(n+3) .ant-line-r2 {
+  height: 70px;
+  top: -50px;
+}
+
+.ant-stage:first-child .ant-line-l1,
+.ant-stage:first-child .ant-line-l2 {
+  display: none;
+}
+
+.ant-stage:last-child .ant-line-r1,
+.ant-stage:last-child .ant-line-r2 {
+  display: none;
+}
