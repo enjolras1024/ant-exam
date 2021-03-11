@@ -10,10 +10,11 @@ function str(source) {
   var target = {};
   for (var key in source) {
     if (source.hasOwnProperty(key)) {
-      if (typeof source === 'object') {
-        target[key] = String(target[key]);
+      var value = source[key];
+      if (value != null && typeof value !== 'object') {
+        target[key] = String(value);
       } else {
-        target[key] = target[key];
+        target[key] = value;
       }
     }
   }
